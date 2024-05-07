@@ -42,31 +42,3 @@ for vacancy in vacancy_list_tag:
 with open("vacancy.json", "w", encoding='utf-8') as file:
     json.dump(parsed_vacancy, file, ensure_ascii=False, indent=4)
 
-
-
-# метод find_all() отобразит список всех articles(статей) и мы можем по этому списку итерироваться
-# for vacancy_tag in vacancy_list_tag.find_all("serp-item serp-item_link"):
-#     h3_tag = vacancy_tag.find("h3 data-qa", class_="bloko-header-section-3")
-#     # a2_tag = h2_tag.find("a", class_="tm-title__link")
-#     # time_tag = article_tag.find("time")
-#
-#     header = h3_tag.text.strip()
-
-    # link_relative = a2_tag['href']
-    # link_absolute = f'https://habr.com{link_relative}'
-    # publication_time = time_tag['datetime']
-
-    # full_article_response = requests.get(link_absolute, headers=gen_headers())
-    # full_article_html_data = full_article_response.text
-    # full_article_soup = BeautifulSoup(full_article_html_data, "lxml")
-    # full_article_tag = full_article_soup.find("div", id="post-content-body")
-    # full_article_text = full_article_tag.text.strip()
-
-    # parsed_data = ({
-    #     "header": header,
-    # #     "link": link_absolute,
-    # #     "pub_time": publication_time,
-    # #     "text": full_article_text[:100]
-    #     }
-    # )
-    # print(parsed_data)
